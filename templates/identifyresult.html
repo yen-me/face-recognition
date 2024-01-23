@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>Identify Famous People</title>
+{% endblock %}
+
+{% block body %}
+    <i class="fa-solid fa-angle-left"></i>
+    <a href="../" class="bthome">Back to Home</a>
+
+    <h2>Identify Famous People</h2>
+
+    {% if ogirinal_filename %}
+        <div>
+            <img src="/static/uploads/identifyface/{{ogirinal_filename}}_identify.png" alt="" class="imgg">
+        </div>
+
+    {% endif %}
+{% endblock %}

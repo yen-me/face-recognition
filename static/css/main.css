@@ -1,0 +1,69 @@
+body {
+    font-family: sans-serif;
+    margin: 30px;
+}
+
+
+.button {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+}
+  
+  
+.button:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+  
+
+a:link {
+    color: black;
+}
+a:visited {
+    color: black;
+}
+a:hover {
+    color: green;
+}
+
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+h2 {
+    background-color: #04AA6D;
+    padding: 10px;
+    color: white;
+}
+
+.bthome {
+    font-size: 15px;
+}
+
+.imgg {
+    width: 800px;
+    height: 400px;
+    object-fit: contain;
+    border: 1px solid black;
+}
+
+.imgg2 {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    border: 1px solid black;
+}

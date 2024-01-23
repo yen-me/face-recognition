@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>Main</title>
+{% endblock %}
+
+{% block body %}
+    <h2>Face Recognition</h2>
+    <button class="button" onclick="window.location.href='/findfaces/'">
+            Find faces
+    </button>
+    <button class="button" onclick="window.location.href='/identify/'">
+            Identify famous people
+    </button>
+{% endblock %}

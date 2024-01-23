@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>Find Faces</title>
+{% endblock %}
+
+{% block body %}
+    <i class="fa-solid fa-angle-left"></i>
+    <a href="../" class="bthome">Back to Home</a>
+
+    <h2>Find Faces</h2>
+
+    {% if ogirinal_filename %}
+        <!-- Uploaded: {{ogirinal_filename}} -->
+
+        <div>
+            <img src="{{ url_for('display_image', ogirinal_filename=ogirinal_filename) }}" alt="" class="imgg">
+        </div>
+        <br>
+        <div>
+            There are {{num_of_people}} people in the image. <br><br> Faces detected from the image:
+        </div>
+
+        <div>
+            {% for i in img_array %}
+                <img src="/static/uploads/findfacesimage/{{folder_name}}/{{i}}.png" alt="" class="imgg2">
+            {% endfor %}        
+        </div>
+
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>Find Faces</title>
+{% endblock %}
+
+{% block body %}
+    <i class="fa-solid fa-angle-left"></i>
+    <a href="../" class="bthome">Back to Home</a>
+    
+    <h2>Find Faces</h2>
+    <form method="POST" enctype="multipart/form-data" class="custom-file-upload">
+        {{form.csrf_token}}
+        {{form.image}}
+        <button type="submit">Upload</button>
+    </form>
+{% endblock %}
